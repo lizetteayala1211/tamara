@@ -22,43 +22,326 @@ p {
 body {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	overflow: hidden;
-	background-color: #D2B48C;
+	background-color: #a57861;
+	background-image: url('./assets/images/main-background.png'); 
+  	height: 100%; 
+  	background-position: center; 
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+/*	For all content outside of navigation ;*/
+.all-content-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	overflow: hidden;
+/*	background-color: #D2B48C;*/
+	height: 94%; 
+	width: 100%;
 }
 
 .top-brick-container {
-	overflow: hidden;
-	background-color: blue;
-	height: 40%;
+	display: flex;
+	flex-direction: row;
+/*	background-color: blue;*/
+	height: 48%;
 	width: 100%;
+	margin-top: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.first-brick-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: hidden;
+	background-color: transparent;
+	background-image: url('./assets/images/first-brick-bg.png'); 
+  	height: 100%; 
+  	background-position: center; 
+  	background-repeat: no-repeat;
+  	background-size: cover;
+	height: 99%;
+	width: 65%;
+	border-radius: 25px;
+	border: 1px solid black;
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+.second-brick-container {
+	display: flex;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.3);
+	height: 99%;
+	width: 32.5%;
+	border-radius: 25px;
+	border: 1px solid black;
+	cursor: pointer;
 }
 
 .opening-copy-container {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
-	align-content: flex-start;
-	align-items: flex-start;
+	align-content: center;
+	align-items: center;
 	text-align: top;
 	overflow: hidden;
 /*	background-color: green;*/
-	height: 25%;
+	height: 20%;
 	width: 100%;
+	direction: rtl;
+}
+
+.scroll {
+	justify-content: flex-start;
+	align-content: center;
+	align-items: center;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	width: 100%;
+}
+
+.opening-div {
+	width: 100%;
+	display: flex;
+	justify-content: center !important;
+	overflow-x: visible !important;
+	overflow-y: hidden !important;
+	direction: ltr;
 }
 
 .opening {
+	display: flex;
 	align-self: flex-start;
 	font-size: 80px;
+	height: 100%;
+	margin-top: 25px;
+	margin-bottom: 0px;
+}
+
+.hide {
+	display: none;
+}
+
+.poem-div {
+	justify-self: center;
+	display: none;
+	width: 100%;
+	direction: ltr;
+}
+
+p.poem {
+	display: flex;
+	font-size: 2em;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.float-right {
+	flex: 1; 
+	text-align: right; 
+	white-space: nowrap;
 }
 
 .bottom-brick-container {
+	display: flex;
+	flex-direction: row;
 	overflow: hidden;
-	background-color: red;
-	height: 28%;
+/*	background-color: red;*/
+	height: 32%;
 	width: 100%;
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.third-brick-container {
+	display: flex;
+	overflow: hidden;
+	/*background-color: rgba(0, 0, 0, 0.3);*/
+	background-image: url('./assets/images/bottom-bricks-bg.png'); 
+  	background-position: center; 
+  	background-repeat: no-repeat;
+  	background-size: cover;
+	height: 33vh;
+	width: 31.5%;
+	border-radius: 25px;
+	border: 1px solid black;
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+.fourth-brick-container {
+	display: flex;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.3);
+	height: 33vh;
+	width: 32.2%;
+	border-radius: 25px;
+	border: 1px solid black;
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+.fifth-brick-container {
+	display: flex;
+	overflow: hidden;
+	/*background-color: rgba(0, 0, 0, 0.3);*/
+	background-image: url('./assets/images/bottom-bricks-bg.png'); 
+  	background-position: center; 
+  	background-repeat: no-repeat;
+  	background-size: cover;
+	height: 33vh;
+	width: 33%;
+	border-radius: 25px;
+	border: 1px solid black;
+	cursor: pointer;
+}
+
+/* Brick Title Content CSS */
+.brick-opacity-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+    height: 100%;
+    opacity: 0;
+    -webkit-transition: opacity 3s ease-in-out;
+    -moz-transition: opacity 3s ease-in-out;
+    -ms-transition: opacity 3s ease-in-out;
+    -o-transition: opacity 3s ease-in-out;
+    transition: opacity 3s ease-in-out;
+}
+
+.brick-opacity-container:hover {
+    opacity: 1;
 }
 
 
+.title-content-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin: 20px;
+	color: #BFAA91;
+	font-family: "Bastardo-Regular";
+	width: 100%;
+}
+
+.name-container {
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.line-container {
+	width: 40%;
+	height: 5%;
+	margin-left: 35px;
+	margin-right: 35px;
+/*	margin-bottom: -20px !important;*/
+	color: #BFAA91;
+}
+
+.title-line {
+	color: #BFAA91;
+/*	border-top: 1px solid #BFAA91 !important;*/
+}
+
+hr {
+    height: 1.5px;
+    background-color: #BFAA91;
+    border: none;
+}
+
+.title-container {
+	margin-top: 5px;
+}
+
+/* Brick Audio Player CSS */
+.title-content-container.bottom {
+/*	background-color: green;*/
+	height: 20%;
+	width: 95%;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.audio-player-container {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	height: 100%;
+	width: 15%;
+/*	background-color: blue;*/
+}
+
+.audio-button-container {
+	display: flex;
+	height: 50%;
+	width: 25%;
+/*	background-color: red;*/
+	margin-right: 10px;
+}
+
+.play-button {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	background-image: url('./assets/icons/play.png'); 
+  	background-position: center; 
+  	background-repeat: no-repeat;
+  	background-size: contain;
+}
+
+.pause-button {
+	display: none;
+	height: 100%;
+	width: 100%;
+	background-image: url('./assets/icons/pause.png'); 
+  	background-position: center; 
+  	background-repeat: no-repeat;
+  	background-size: contain;
+}
+
+.arrow-container {
+	display: flex;
+	height: 35%;
+	width: 25%;
+/*	background-color: blue;*/
+	background-image: url('./assets/icons/arrow.png'); 
+  	background-position: right; 
+  	background-repeat: no-repeat;
+  	background-size: contain;
+}
+
+/* Designing for scroll-bar */
+ ::-webkit-scrollbar {
+     width: 6px;
+  }
+     
+/* Track */
+  ::-webkit-scrollbar-track {
+  /*background: gainsboro;*/
+  border-radius: 5px;
+  }
+     
+/* Handle */
+  ::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 5px;
+  }
+     
+/* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  }
+
+/* Navigation Bar CSS */
 .navbar {
   overflow: hidden;
   background-color: none;
@@ -95,12 +378,22 @@ body {
 /* fourth story link */
 .fourth {
   margin-left: 60px;
-  margin-right: 150px !important;
+}
+
+/* fifth story link */
+.fifth {
+  margin-left: 60px;
+}
+
+/* essay link */
+.essay {
+  margin-left: 60px;
+/*  margin-right: 86px !important;*/
 }
 
 /* home link */
 .home {
-  margin-left: 100px !important;
+  margin-left: 43px !important;
   border-left: 1px solid black;
 }
 
@@ -111,7 +404,7 @@ body {
 }
 
 .navbar a:hover {
-  background-color: #ddd;
+  font-style: italic;
   color: black;
 }
 
