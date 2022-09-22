@@ -26,21 +26,160 @@ body {
 	overflow: hidden;
 	background-color: #a57861;
 	background-image: url('./assets/images/main-background.png'); 
-  	height: 100%; 
-  	background-position: center; 
-  	background-repeat: no-repeat;
-  	background-size: cover;
+  height: 100%; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 6s;
 }
 
-/*	For all content outside of navigation ;*/
+/*	For all content outside of navigation */
 .all-content-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	overflow: hidden;
+	over-flow-x: hidden;
+	overflow-y: visible;
 /*	background-color: #D2B48C;*/
-	height: 94%; 
+	height: 93%; 
 	width: 100%;
+	margin-top: 10px;
+}
+
+/*	Brick Isolated Title Containers */
+
+.brick-titles {
+	display: flex;
+	flex-direction: column;
+/*	background-color: blue;*/
+	height: 0%;
+	width: 99%;
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	overflow: hidden !important;
+}
+
+/*	First Isolated Title */
+.title-one {
+	display: flex;
+	flex-direction: row;
+/*	background-color: blue;*/
+	height: 100%;
+	width: 100%;
+}
+
+/*	Second Isolated Title */
+.title-two {
+	display: flex;
+	flex-direction: row;
+/*	background-color: blue;*/
+	height: 0%;
+	width: 100%;
+}
+
+/*	Third Isolated Title */
+.title-three {
+	display: flex;
+	flex-direction: row;
+/*	background-color: blue;*/
+	height: 0%;
+	width: 100%;
+}
+
+/*	Four Isolated Title */
+.title-four {
+	display: flex;
+	flex-direction: row;
+/*	background-color: blue;*/
+	height: 0%;
+	width: 100%;
+}
+
+/*	Five Isolated Title */
+.title-five {
+	display: flex;
+	flex-direction: row;
+/*	background-color: blue;*/
+	height: 0%;
+	width: 100%;
+}
+
+.isolated-title-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+/*	margin: 20px;*/
+	color: black;
+	font-family: "Bastardo-Regular";
+	font-size: 30px;
+	width: 100%;
+}
+
+.name-container.isolated {
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.line-container.isolated.one {
+	width: 60%;
+	height: 5%;
+	margin-left: 35px;
+	margin-right: 35px;
+/*	margin-bottom: -20px !important;*/
+	color: #BFAA91;
+}
+
+.line-container.isolated.two {
+	width: 60%;
+	height: 5%;
+	margin-left: 35px;
+	margin-right: 35px;
+/*	margin-bottom: -20px !important;*/
+	color: #BFAA91;
+}
+
+.line-container.isolated.three {
+	width: 65%;
+	height: 5%;
+	margin-left: 35px;
+	margin-right: 35px;
+/*	margin-bottom: -20px !important;*/
+	color: #BFAA91;
+}
+
+.line-container.isolated.four {
+	width: 50%;
+	height: 5%;
+	margin-left: 35px;
+	margin-right: 35px;
+/*	margin-bottom: -20px !important;*/
+	color: #BFAA91;
+}
+
+.line-container.isolated.five {
+	width: 60%;
+	height: 5%;
+	margin-left: 35px;
+	margin-right: 35px;
+/*	margin-bottom: -20px !important;*/
+	color: #BFAA91;
+}
+
+.title-line.isolated {
+	color: #BFAA91;
+/*	border-top: 1px solid #BFAA91 !important;*/
+}
+
+hr.isolated {
+  height: 1.5px;
+  background-color: black;
+  border: none;
+}
+
+.title-container.isolated {
+	margin-top: 5px;
 }
 
 .top-brick-container {
@@ -48,8 +187,8 @@ body {
 	flex-direction: row;
 /*	background-color: blue;*/
 	height: 48%;
-	width: 100%;
-	margin-top: 20px;
+	width: 100.3%;
+	margin-top: 5px;
 	margin-left: 5px;
 	margin-right: 5px;
 }
@@ -61,16 +200,20 @@ body {
 	overflow: hidden;
 	background-color: transparent;
 	background-image: url('./assets/images/first-brick-bg.png'); 
-  	height: 100%; 
-  	background-position: center; 
-  	background-repeat: no-repeat;
-  	background-size: cover;
+  height: 100%; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
 	height: 99%;
 	width: 65%;
 	border-radius: 25px;
 	border: 1px solid black;
 	margin-right: 15px;
 	cursor: pointer;
+	-webkit-transition: all 3s ease;
+  -moz-transition: all 3s ease;
+  -o-transition: all 3s ease;
+  transition: all 3s ease;
 }
 
 .second-brick-container {
@@ -100,11 +243,14 @@ body {
 
 .scroll {
 	justify-content: flex-start;
-	align-content: center;
-	align-items: center;
-	overflow-x: hidden;
-	overflow-y: scroll;
-	width: 100%;
+  align-content: center;
+  align-items: center;
+  align-self: center;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 95%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .opening-div {
@@ -132,15 +278,18 @@ body {
 .poem-div {
 	justify-self: center;
 	display: none;
+/*	height: 0%;*/
 	width: 100%;
 	direction: ltr;
+/*	opacity: 0;*/
 }
 
 p.poem {
 	display: flex;
-	font-size: 2em;
+	font-size: 1.3em;
 	padding-left: 15px;
 	padding-right: 15px;
+	line-height: 1.5;
 }
 
 .float-right {
@@ -152,10 +301,10 @@ p.poem {
 .bottom-brick-container {
 	display: flex;
 	flex-direction: row;
-	overflow: hidden;
+/*	overflow: hidden;*/
 /*	background-color: red;*/
 	height: 32%;
-	width: 100%;
+	width: 100.25%;
 	margin-top: 5px;
 	margin-left: 5px;
 	margin-right: 5px;
@@ -166,9 +315,9 @@ p.poem {
 	overflow: hidden;
 	/*background-color: rgba(0, 0, 0, 0.3);*/
 	background-image: url('./assets/images/bottom-bricks-bg.png'); 
-  	background-position: center; 
-  	background-repeat: no-repeat;
-  	background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
 	height: 33vh;
 	width: 31.5%;
 	border-radius: 25px;
@@ -198,7 +347,7 @@ p.poem {
   	background-repeat: no-repeat;
   	background-size: cover;
 	height: 33vh;
-	width: 33%;
+	width: 32.5%;
 	border-radius: 25px;
 	border: 1px solid black;
 	cursor: pointer;
@@ -209,19 +358,41 @@ p.poem {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-    height: 100%;
-    opacity: 0;
-    -webkit-transition: opacity 3s ease-in-out;
-    -moz-transition: opacity 3s ease-in-out;
-    -ms-transition: opacity 3s ease-in-out;
-    -o-transition: opacity 3s ease-in-out;
-    transition: opacity 3s ease-in-out;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 2s ease-in-out;
+  -moz-transition: opacity 2s ease-in-out;
+  -ms-transition: opacity 2s ease-in-out;
+  -o-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+}
+
+.brick-opacity-container.one {
+}
+
+.brick-opacity-container.two {
+	width: 90%;
+}
+
+.brick-opacity-container.three {
+	height: 90%;
+	width: 90%;
+}
+
+.brick-opacity-container.four {
+	height: 90%;
+	width: 90%;
+}
+
+.brick-opacity-container.five {
+	height: 90%;
+	width: 90%;
 }
 
 .brick-opacity-container:hover {
     opacity: 1;
 }
-
 
 .title-content-container {
 	display: flex;
@@ -280,10 +451,50 @@ hr {
 /*	background-color: blue;*/
 }
 
+.audio-copy.listen.one {
+	display: block;
+}
+
+.audio-copy.listen.two {
+	display: none;
+}
+
+.audio-copy.listen.three {
+	display: none;
+}
+
+.audio-copy.listen.four {
+	display: none;
+}
+
+.audio-copy.listen.five {
+	display: none;
+}
+
+.audio-copy.pause.one {
+	display: block;
+}
+
+.audio-copy.pause.two {
+	display: none;
+}
+
+.audio-copy.pause.three {
+	display: none;
+}
+
+.audio-copy.pause.four {
+	display: none;
+}
+
+.audio-copy.pause.five {
+	display: none;
+}
+
 .audio-button-container {
 	display: flex;
 	height: 50%;
-	width: 25%;
+	width: 20%;
 /*	background-color: red;*/
 	margin-right: 10px;
 }
@@ -303,20 +514,74 @@ hr {
 	height: 100%;
 	width: 100%;
 	background-image: url('./assets/icons/pause.png'); 
-  	background-position: center; 
-  	background-repeat: no-repeat;
-  	background-size: contain;
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.audio-copy {
+	margin-left: 10px;
+/*	margin-bottom: 4px;*/
 }
 
 .arrow-container {
+	display: none!important;
+}
+
+.arrow-container.one {
 	display: flex;
 	height: 35%;
-	width: 25%;
+	width: 10%;
+	margin-right: 10px;
 /*	background-color: blue;*/
 	background-image: url('./assets/icons/arrow.png'); 
-  	background-position: right; 
-  	background-repeat: no-repeat;
-  	background-size: contain;
+  background-position: right; 
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.arrow-container.two {
+	display: flex;
+	height: 35%;
+	width: 20%;
+/*	background-color: blue;*/
+	background-image: url('./assets/icons/arrow.png'); 
+  background-position: right; 
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.arrow-container.three {
+	display: flex;
+	height: 35%;
+	width: 20%;
+/*	background-color: blue;*/
+	background-image: url('./assets/icons/arrow.png'); 
+  background-position: right; 
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.arrow-container.four {
+	display: flex;
+	height: 35%;
+	width: 20%;
+/*	background-color: blue;*/
+	background-image: url('./assets/icons/arrow.png'); 
+  background-position: right; 
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.arrow-container.five {
+	display: flex;
+	height: 35%;
+	width: 20%;
+/*	background-color: blue;*/
+	background-image: url('./assets/icons/arrow.png'); 
+  background-position: right; 
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 /* Designing for scroll-bar */
@@ -344,13 +609,18 @@ hr {
 /* Navigation Bar CSS */
 .navbar {
   overflow: hidden;
-  background-color: none;
+/*  background-color: none;*/
   border: 1px solid black; 
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   font-family: "Bastardo-Regular";
+  background-color: #a57861;
+	background-image: url('./assets/images/main-background.png'); 
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .navbar a {
@@ -387,7 +657,7 @@ hr {
 
 /* essay link */
 .essay {
-  margin-left: 60px;
+  margin-left: 56px;
 /*  margin-right: 86px !important;*/
 }
 
@@ -397,10 +667,13 @@ hr {
   border-left: 1px solid black;
 }
 
-
 /* contact link right-aligned */
-.last {
+.about {
   float: right !important;
+}
+
+.navbar {
+
 }
 
 .navbar a:hover {
@@ -410,6 +683,216 @@ hr {
 
 .navbar .icon {
   display: none;
+}
+
+/* Experience Bricks Content CSS */
+
+.experience-bg {
+	background-color: rgba(0, 0, 0, 0.3);
+	background-image: none;
+	transition: background-image 5s linear;
+  -moz-transition: background-image 5s linear;
+  -webkit-transition: background-image 5s linear;
+  -ms-transition: background-image 5s linear;
+}
+
+.remove {
+	display: none;
+}
+
+/*	Full Opacity Class for Isolated Brick Experience*/
+.full-opacity {
+	opacity: 1;
+	-webkit-transition: all 3s ease;
+  -moz-transition: all 3s ease;
+  -o-transition: all 3s ease;
+  transition: all 3s ease;
+}
+
+.bg-change {
+	background-image: url('./assets/images/first-brick-bg.png'); 
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-image 5s linear;
+  -moz-transition: background-image 5s linear;
+  -webkit-transition: background-image 5s linear;
+  -ms-transition: background-image 5s linear;
+}
+
+.experience-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-content: center;
+	align-items: center;
+	text-align: top;
+	overflow: hidden;
+/*	background-color: green;*/
+	height: 0%;
+	width: 100%;
+/*	opacity: 0;*/
+}
+
+.experience-content {
+
+}
+
+.experience-content.top {
+	flex-direction: row;
+	justify-self: center;
+	display: flex;
+	height: 85%;
+	width: 95%;
+/*	background-color: red;*/
+/*	margin-left: 20px;
+	padding-right: 20px;*/
+	overflow: hidden;
+	margin-top: 30px;
+}
+
+.experience-wrapper {
+	height: 100%;
+  width: 70%;
+	direction: rtl;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.experience-poem {
+	display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  direction: ltr;
+  height: 100%;
+  width: 100%;
+  color: #BFAA91;
+}
+
+.experience-poem.one {
+/*	display: none;*/
+	display: flex;
+	height: 100%;
+	width: 100%;
+}
+
+.experience-poem.two {
+	display: none;
+	height: 0%;
+	width: 100%;
+}
+
+.experience-poem.three {
+	display: none;
+	height: 0%;
+	width: 100%;
+}
+
+.experience-poem.four {
+	display: none;
+	height: 0%;
+	width: 100%;
+}
+
+.experience-poem.five {
+	display: none;
+	height: 0%;
+	width: 100%;
+}
+
+p.ex-poem {
+	font-size: 1.3em;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #BFAA91;
+	font-family: "Bastardo-Regular";
+	line-height: 1.5;
+	margin: 5px 0;
+	margin-top: 0px !important;
+}
+
+p.ex-poem.right {
+	width: 70%;
+	text-align: right !important; 
+	white-space: nowrap;
+	margin-right: 40px;
+}
+
+.left-margin-small {
+	margin-left: 50px;
+}
+
+.left-margin-big {
+	margin-left: 110px;
+}
+
+.left-margin-xtra-big {
+	margin-left: 200px;
+}
+
+.transcript-container {
+	flex-direction: row;
+	justify-self: center;
+	display: flex;
+	height: 95%;
+	width: 30%;
+/*	background-color: blue;*/
+/*	margin-left: 20px;
+	padding-right: 20px;*/
+	overflow-x: hidden;
+	overflow-y: scroll;
+	border: 1px solid black;
+	border-radius: 25px;
+	background-color: #a57861;
+	background-image: url('./assets/images/main-background.png'); 
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.experience-content.bottom {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	display: flex;
+	height: 15%;
+	width: 95%;
+/*	background-color: red;*/
+/*	margin-left: 20px;
+	padding-right: 20px;*/
+	overflow: hidden;
+/*	margin-top: 30px;*/
+}
+
+.audio-visual-key {
+	display: flex;
+	justify-content: row;
+	justify-content: flex-start;
+	align-items: flex-end;
+	display: flex;
+	height: 35%;
+	width: 100%;
+/*	background-color: blue;*/
+/*	margin-left: 20px;
+	padding-right: 20px;*/
+	overflow: hidden;
+/*	margin-top: 30px;*/
+}
+
+.audio-visual-bar {
+	display: flex;
+	height: 80%;
+	width: 10%;
+	overflow: hidden;
+	border: 1px solid black;
+	border-radius: 25px;
+	background-color: #a57861;
+	background-image: url('./assets/images/main-background.png'); 
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* mobile menu css */
@@ -434,6 +917,15 @@ hr {
     display: block;
     text-align: left;
   }
+
+/*  .all-content-container {
+	display: none;
+	flex-direction: column;
+	justify-content: flex-start;
+	overflow: hidden;
+	height: 91.5%; 
+	width: 100%;
+}*/
 }
 
 
