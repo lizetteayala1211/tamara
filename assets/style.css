@@ -927,42 +927,10 @@ p.ex-poem.right {
 
 /* ESSAY PAGE CSS */
 
-.essay-container {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	overflow: hidden;
-	height: 92%;
-	width: 100%;
-	direction: rtl;
-/*	background-color: blue;*/
-}
-
-.essay-wrapper {
-	display: flex;
-	flex-direction: column;
-	overflow-x: hidden !important;
-	overflow-y: scroll;
-/*	background-color: white;*/
-	margin: 20px;
-	direction: rtl;
-	}
-
-.essay-div {
-/*	width: 100%;*/
-	margin: 10px;
-	direction: ltr;
-/*	background-color: green;*/
-}
-
 .essay-start {
 	font-family: "Grand-Slang-Roman" !important;
 	font-size: 1.5em !important;
 	margin: 20px !important;
-}
-
-.essay-start.centered {
-	text-align: center;
 }
 
 .essay-opening-copy {
@@ -973,27 +941,6 @@ p.ex-poem.right {
 	margin-right: 200px !important;
 	line-height: 1.5 !important;
 }
-
-.essay-quotes {
-	font-size: 1.3em !important;
-	line-height: 1.5 !important;
-	margin-left: 80px !important;
-	margin-right: 80px !important;
-}
-
-.essay-quotes.centered {
-	align-self: center;
-	text-align: center;
-}
-
-.essay-body {
-	font-size: 1.3em !important;
-	line-height: 1.5 !important;
-	margin-left: 80px !important;
-	margin-right: 80px !important;
-	text-indent: 50px !important;
-}
-
 
 
 /* mobile menu css */

@@ -10,7 +10,7 @@
         <meta http-equiv="pragma" content="no-cache" />
         <meta http-equiv="cache-control" content="no-cache" />
     	<link rel="stylesheet" href="./style.css">
-    	<!-- <link rel="icon" type="image/x-icon" href="./assets/images/favicon/favicon.ico"> -->
+    	<link rel="icon" type="image/x-icon" href="./assets/images/favicon/favicon.ico">
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
     	<script type="text/javascript" src="global.js"></script>
 	</head>
@@ -18,35 +18,35 @@
 	<body id="body" onload="document.body.style.opacity='1'">
 		<div class="all-content-container" id="all-content">
 			<div class="brick-titles" id="all-isolated-title">
-				<div class="title-one" id="isolated-one" n="1">
+				<div class="title-one" id="isolated-one">
 					<div class="isolated-title-container">
 						<div class="name-container isolated"> CARLOS </div>
 						<div class="line-container isolated one"> <hr class="isolated one"> </div>
 						<div class="title-container isolated"> JUST BLOSSOMED </div>
 					</div>
 				</div>
-				<div class="title-two" id="isolated-two" n="2">
+				<div class="title-two" id="isolated-two">
 					<div class="isolated-title-container">
 						<div class="name-container isolated"> FAITH </div>
 						<div class="line-container isolated two"> <hr class="isolated two"> </div>
 						<div class="title-container isolated"> WE GOT BRAS THOUGH </div>
 					</div>
 				</div>
-				<div class="title-three" id="isolated-three" n="3">
+				<div class="title-three" id="isolated-three">
 					<div class="isolated-title-container">
 						<div class="name-container isolated"> BERNIE </div>
 						<div class="line-container isolated three"> <hr class="isolated three"> </div>
 						<div class="title-container isolated"> VERY FREEING </div>
 					</div>
 				</div>
-				<div class="title-four" id="isolated-four" n="4">
+				<div class="title-four" id="isolated-four">
 					<div class="isolated-title-container">
 						<div class="name-container isolated"> CHANCE </div>
 						<div class="line-container isolated four"> <hr class="isolated four"> </div>
 						<div class="title-container isolated"> TAKE YOUR MIND OUTSIDE </div>
 					</div>
 				</div>
-				<div class="title-five" id="isolated-five" n="5">
+				<div class="title-five" id="isolated-five">
 					<div class="isolated-title-container">
 						<div class="name-container isolated"> JOE </div>
 						<div class="line-container isolated five"> <hr class="isolated five"> </div>
@@ -54,7 +54,7 @@
 					</div>
 				</div>
 			</div>
-<!-- ISOLATED BRICKS ALL CONTENT -->
+<!-- ISOLATED BRICKS ALL CONTENT -->			
 			<div class="top-brick-container" id="top-part">
 				<div class="first-brick-container" id="first-brick">
 					<!-- ISOLATED/CLICKED EXPERIENCE CONTENT -->
@@ -96,7 +96,7 @@
 							<p class="ex-poem"> And they just welcomed me with like open arms you know and I became like It </p>
 							<p class="ex-poem"> became my home group, you know? </p>
 							<p class="ex-poem"> I was veryvery close with those people and I </p>
-							<p class="ex-poem"> I ended up — </p>
+							<p class="ex-poem"> I ended up — </p> 
 							<br>
 							<p class="ex-poem"> stopped working with the first sponsor <br> And got a sponsor there </p>
 							<p class="ex-poem"> And </p>
@@ -188,7 +188,7 @@
 							<p class="ex-poem"> here </p>
 							<p class="ex-poem"> that was really liberating <br> to like learn and understand. </p>
 							<p class="ex-poem"> And then also just like— <br> through reading and stuff like this <br> just like access with— </p>
-							<p class="ex-poem"> um <br> a world outside of this like <br>
+							<p class="ex-poem"> um <br> a world outside of this like <br> 
 							<i> <span class="left-margin-small"> extremely </span> </i> </p>
 							<p class="ex-poem"> insular </p>
 							<p class="ex-poem"> world </p>
@@ -237,7 +237,7 @@
 							<br>
 							<p class="ex-poem"> Keywords </p>
 							</div>
-							</div>
+							</div>  
 							<div class="transcript-container"></div>
 						</div>
 						<div class="experience-content bottom">
@@ -268,11 +268,19 @@
 								<div class="play-button"></div>
 								<div class="pause-button"></div>
 							</div> -->
-							<div class="audio-copy listen" onclick="action()"> LISTEN </div>
+							<div class="audio-copy listen one" onclick="action01();" id="l1"> LISTEN </div>
+							<div class="audio-copy listen two" onclick="action02();" id="l2"> LISTEN </div>
+							<div class="audio-copy listen three" onclick="action03();" id="l3"> LISTEN </div>
+							<div class="audio-copy listen four" onclick="action04();" id="l4"> LISTEN </div>
+							<div class="audio-copy listen five" onclick="action05();" id="l5"> LISTEN </div>
 						</div>
 						<audio id="audio-01" class="01" src="./assets/audio/Carlos-just-blossomed.mp3" loop autoloop></audio>
 <!-- 						<div class="arrow-container one"></div> -->
-						<div class="audio-copy pause" onclick="action()"> PAUSE </div>
+						<div class="audio-copy pause one" onclick="action01();" id="p1"> PAUSE </div>
+						<div class="audio-copy pause two" onclick="action02();" id="p2"> PAUSE </div>
+						<div class="audio-copy pause three" onclick="action03();" id="p3"> PAUSE </div>
+						<div class="audio-copy pause four" onclick="action04();" id="p4"> PAUSE </div>
+						<div class="audio-copy pause five" onclick="action05();" id="p5"> PAUSE </div>
 					</div>
 					</div>
 				</div>
@@ -314,7 +322,7 @@
 					<p class="poem"> there was a brick, the first brick. </p>
 					<p class="poem"> I heard Sylvia threw it, and I heard Marsha threw it. </p>
 					<br><br><br><br>
-					<p class="poem"> <span class="float-right"> I heard there was no brick at all. It was a rock. It was a cobblestone. It was an
+					<p class="poem"> <span class="float-right"> I heard there was no brick at all. It was a rock. It was a cobblestone. It was an 
 					<br> incendiary device. </span> </p>
 					<br><br><br><br>
 					<p class="poem"> It was a coffee cup on a hot and fed-up weekend night  </p>
@@ -323,7 +331,7 @@
 					<p class="poem"> <span class="float-right"> It was a sugar shaker, sweet dust shattering window glass </span> </p>
 					<p class="poem"> <span class="float-right"> It was purses, lipstick and condoms still inside. </span> </p>
 					<br>
-					<p class="poem"> <span class="float-right"> It was
+					<p class="poem"> <span class="float-right"> It was 
 					<br> high heels. </span> </p>
 					<p class="poem"> <span class="float-right"> It was sweet cream in a policeman’s face. </span> </p>
 					<br><br><br>
