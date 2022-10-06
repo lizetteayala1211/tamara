@@ -20,6 +20,11 @@
     src: url("./assets/fonts/grandslang-roman-webfont.woff");
 }
 
+@font-face {
+    font-family: "Snap-It-Mono";
+    src: url("./assets/fonts/Snap-itmono-1.6-Regular.woff");
+}
+
 p {
 	font-family: "Bastardo-Regular";	
 }
@@ -957,12 +962,22 @@ p.ex-poem.right {
 
 .essay-start {
 	font-family: "Grand-Slang-Roman" !important;
-	font-size: 1.5em !important;
+	font-size: 1.3em !important;
 	margin: 20px !important;
 }
 
 .essay-start.centered {
 	text-align: center;
+}
+
+.essay-start.indent {
+	text-indent: 50px !important;
+}
+
+.essay-end.indent {
+	font-family: "Grand-Slang-Roman" !important;
+	font-size: 1.3em !important;
+	text-indent: 80px !important;
 }
 
 .essay-opening-copy {
@@ -975,7 +990,8 @@ p.ex-poem.right {
 }
 
 .essay-quotes {
-	font-size: 1.3em !important;
+	font-family: "Snap-It-Mono";
+	font-size: 1.1em !important;
 	line-height: 1.5 !important;
 	margin-left: 80px !important;
 	margin-right: 80px !important;
@@ -984,6 +1000,7 @@ p.ex-poem.right {
 .essay-quotes.centered {
 	align-self: center;
 	text-align: center;
+	text-indent: 38px !important;
 }
 
 .essay-body {
@@ -992,6 +1009,18 @@ p.ex-poem.right {
 	margin-left: 80px !important;
 	margin-right: 80px !important;
 	text-indent: 50px !important;
+}
+
+.essay-body.no-margin {
+	margin-left: 35px !important;
+	margin-right: 80px !important;
+}
+
+.left-align.quotes {
+	font-size: 1.3em !important;
+	line-height: 1.5 !important;
+	margin-left: 135px !important;
+	margin-right: 80px !important;
 }
 
 
