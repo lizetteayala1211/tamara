@@ -1023,6 +1023,48 @@ p.ex-poem.right {
 	margin-right: 80px !important;
 }
 
+.thin-font {
+	font-family: "Bastardo-Thin";
+}
+
+hr.footnote-break {
+	color:  black;
+	background-color: black;
+	width: 20%;
+	font-size: 1.3em !important;
+	line-height: 1.5 !important;
+	margin-left: 80px !important;
+	margin-right: 80px !important;
+}
+
+a.footnote-script {
+	color: black;
+	text-decoration: none;
+}
+
+.footnote-notation {
+	font-family: "Bastardo-Regular";
+	font-size: 1em !important;
+	line-height: 1.5 !important;
+	color: black;
+	text-decoration: none;
+	margin-left: 80px !important;
+	margin-right: 0px !important;
+}
+
+a.footnote-link {
+	font-family: "Bastardo-Regular";
+	font-size: 1em !important;
+	line-height: 1.5 !important;
+	color: black;
+	text-decoration: none;
+	margin-left: 80px !important;
+	margin-right: 0px !important;
+}
+
+.xtra-margin {
+	margin-left: 80px !important;
+}
 
 
 /* mobile menu css */
