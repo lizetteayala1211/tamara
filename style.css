@@ -686,10 +686,15 @@ hr {
 
 }
 
-.navbar a:hover {
+/*.navbar a:hover {
   font-style: italic;
   color: black;
 }
+
+.navbar a:active {
+  background-color: yellow;
+  font-style: italic;
+}*/
 
 .navbar .icon {
   display: none;
@@ -1065,6 +1070,57 @@ a.footnote-link {
 .xtra-margin {
 	margin-left: 80px !important;
 }
+
+/* Slider Css */
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+    margin: 0px 10px 7px 10px;
+  }
+
+  /* The slider itself */
+  .audiorange-slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 2px; /* Specified height */
+    background: #072555; 
+    outline: none; /* Remove outline */
+  }
+
+/* The slider handle (use -webkit- 
+(Chrome, Opera, Safari, Edge) and -moz- (Firefox) to 
+override default look) */
+
+.audiorange-slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 15px; /* Set a specific slider handle width */
+    height: 15px; /* Slider handle height */
+    border-radius: 50%; 
+    background: #0CA4D1;
+    cursor: pointer; 
+    transition: transform 200ms;
+  }
+
+.audiorange-slider::-webkit-slider-thumb:hover {
+    transform: scale(1.1);
+  }
+
+ .audiorange-slider::-moz-range-thumb {
+    width: 15px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    border-radius: 50%; 
+    background: #0CA4D1; 
+    cursor: pointer;
+    transition: transform 200ms;
+  }
+
+  .audiorange-slider::-moz-range-thumb:hover {
+    transform: scale(1.1);
+  }
+
+
 
 
 /* mobile menu css */
