@@ -26,7 +26,7 @@
 }
 
 p {
-	font-family: "Bastardo-Regular";	
+	font-family: "Bastardo-Regular";
 }
 
 body {
@@ -35,9 +35,9 @@ body {
 	justify-content: flex-start;
 	overflow: hidden;
 	background-color: #a57861;
-	background-image: url('./assets/images/main-background.png'); 
-  height: 100%; 
-  background-position: center; 
+	background-image: url('./assets/images/main-background.png');
+  height: 100%;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0;
@@ -52,7 +52,7 @@ body {
 	over-flow-x: hidden;
 	overflow-y: visible;
 /*	background-color: #D2B48C;*/
-	height: 93%; 
+	height: 93%;
 	width: 100%;
 	margin-top: 10px;
 }
@@ -209,9 +209,9 @@ hr.isolated {
 	justify-content: space-between;
 	overflow: hidden;
 	background-color: transparent;
-	background-image: url('./assets/images/first-brick-bg.png'); 
-  height: 100%; 
-  background-position: center; 
+	background-image: url('./assets/images/first-brick-bg.png');
+  height: 100%;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 	height: 99%;
@@ -303,8 +303,8 @@ p.poem {
 }
 
 .float-right {
-	flex: 1; 
-	text-align: right; 
+	flex: 1;
+	text-align: right;
 	white-space: nowrap;
 }
 
@@ -324,8 +324,8 @@ p.poem {
 	display: flex;
 	overflow: hidden;
 	/*background-color: rgba(0, 0, 0, 0.3);*/
-	background-image: url('./assets/images/bottom-bricks-bg.png'); 
-  background-position: center; 
+	background-image: url('./assets/images/bottom-bricks-bg.png');
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 	height: 33vh;
@@ -352,8 +352,8 @@ p.poem {
 	display: flex;
 	overflow: hidden;
 	/*background-color: rgba(0, 0, 0, 0.3);*/
-	background-image: url('./assets/images/bottom-bricks-bg.png'); 
-  	background-position: center; 
+	background-image: url('./assets/images/bottom-bricks-bg.png');
+  	background-position: center;
   	background-repeat: no-repeat;
   	background-size: cover;
 	height: 33vh;
@@ -515,8 +515,8 @@ hr {
 	display: flex;
 	height: 100%;
 	width: 100%;
-	background-image: url('./assets/icons/play.png'); 
-  	background-position: center; 
+	background-image: url('./assets/icons/play.png');
+  	background-position: center;
   	background-repeat: no-repeat;
   	background-size: contain;
 }
@@ -525,8 +525,8 @@ hr {
 	display: none;
 	height: 100%;
 	width: 100%;
-	background-image: url('./assets/icons/pause.png'); 
-  background-position: center; 
+	background-image: url('./assets/icons/pause.png');
+  background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -546,8 +546,8 @@ hr {
 	width: 10%;
 	margin-right: 10px;
 /*	background-color: blue;*/
-	background-image: url('./assets/icons/arrow.png'); 
-  background-position: right; 
+	background-image: url('./assets/icons/arrow.png');
+  background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -557,8 +557,8 @@ hr {
 	height: 35%;
 	width: 20%;
 /*	background-color: blue;*/
-	background-image: url('./assets/icons/arrow.png'); 
-  background-position: right; 
+	background-image: url('./assets/icons/arrow.png');
+  background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -568,8 +568,8 @@ hr {
 	height: 35%;
 	width: 20%;
 /*	background-color: blue;*/
-	background-image: url('./assets/icons/arrow.png'); 
-  background-position: right; 
+	background-image: url('./assets/icons/arrow.png');
+  background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -579,8 +579,8 @@ hr {
 	height: 35%;
 	width: 20%;
 /*	background-color: blue;*/
-	background-image: url('./assets/icons/arrow.png'); 
-  background-position: right; 
+	background-image: url('./assets/icons/arrow.png');
+  background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -590,8 +590,8 @@ hr {
 	height: 35%;
 	width: 20%;
 /*	background-color: blue;*/
-	background-image: url('./assets/icons/arrow.png'); 
-  background-position: right; 
+	background-image: url('./assets/icons/arrow.png');
+  background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -600,20 +600,20 @@ hr {
  ::-webkit-scrollbar {
      width: 6px;
   }
-     
+
 /* Track */
   ::-webkit-scrollbar-track {
 /*  background: gainsboro;*/
   border-radius: 5px;
   }
-     
+
 /* Handle */
   ::-webkit-scrollbar-thumb {
   background: black;
   border-radius: 5px;
   height: 5% !important;
   }
-     
+
 /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
   background: #555;
@@ -623,15 +623,15 @@ hr {
 .navbar {
   overflow: hidden;
 /*  background-color: none;*/
-  border: 1px solid black; 
+  border: 1px solid black;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   font-family: "Bastardo-Regular";
   background-color: #a57861;
-	background-image: url('./assets/images/main-background.png'); 
-  background-position: center; 
+	background-image: url('./assets/images/main-background.png');
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -649,13 +649,13 @@ hr {
 /* second story link */
 .second {
   margin-left: 60px;
-  
+
 }
 
 /* third story link */
 .third {
   margin-left: 60px;
-  
+
 }
 
 /* fourth story link */
@@ -728,8 +728,8 @@ hr {
 }
 
 .bg-change {
-	background-image: url('./assets/images/first-brick-bg.png'); 
-  background-position: center; 
+	background-image: url('./assets/images/first-brick-bg.png');
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   transition: background-image 5s linear;
@@ -833,7 +833,7 @@ p.ex-poem {
 
 p.ex-poem.right {
 	width: 70%;
-	text-align: right !important; 
+	text-align: right !important;
 	white-space: nowrap;
 	margin-right: 40px;
 }
@@ -864,8 +864,8 @@ p.ex-poem.right {
 	border: 1px solid black;
 	border-radius: 25px;
 	background-color: #a57861;
-	background-image: url('./assets/images/main-background.png'); 
-  background-position: center; 
+	background-image: url('./assets/images/main-background.png');
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 20px;
@@ -909,8 +909,8 @@ p.ex-poem.right {
 	border: 1px solid black;
 	border-radius: 25px;
 	background-color: #a57861;
-	background-image: url('./assets/images/main-background.png'); 
-  background-position: center; 
+	background-image: url('./assets/images/main-background.png');
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1089,12 +1089,12 @@ a.footnote-link {
     appearance: none;
     width: 100%; /* Full-width */
     height: 2px; /* Specified height */
-    background: #072555; 
+    background: #072555;
     outline: none; /* Remove outline */
   }
 
-/* The slider handle (use -webkit- 
-(Chrome, Opera, Safari, Edge) and -moz- (Firefox) to 
+/* The slider handle (use -webkit-
+(Chrome, Opera, Safari, Edge) and -moz- (Firefox) to
 override default look) */
 
 .audiorange-slider::-webkit-slider-thumb {
@@ -1102,9 +1102,9 @@ override default look) */
     appearance: none;
     width: 15px; /* Set a specific slider handle width */
     height: 15px; /* Slider handle height */
-    border-radius: 50%; 
+    border-radius: 50%;
     background: #0CA4D1;
-    cursor: pointer; 
+    cursor: pointer;
     transition: transform 200ms;
   }
 
@@ -1115,8 +1115,8 @@ override default look) */
  .audiorange-slider::-moz-range-thumb {
     width: 15px; /* Set a specific slider handle width */
     height: 25px; /* Slider handle height */
-    border-radius: 50%; 
-    background: #0CA4D1; 
+    border-radius: 50%;
+    background: #0CA4D1;
     cursor: pointer;
     transition: transform 200ms;
   }
@@ -1156,13 +1156,12 @@ override default look) */
 	flex-direction: column;
 	justify-content: flex-start;
 	overflow: hidden;
-	height: 91.5%; 
+	height: 91.5%;
 	width: 100%;
 }*/
 }
 
-
-
-
-
-
+p.highlight {
+/*	background-color: #778E6D;*/
+	color: black;
+}
