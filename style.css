@@ -850,11 +850,11 @@ p.ex-poem.right {
 	margin-left: 200px;
 }
 
-.transcript-container {
+.main-transcript-container {
 	flex-direction: row;
 	justify-self: center;
 	display: flex;
-	height: 88%;
+	height: 87%;
 	width: 40%;
 /*	background-color: blue;*/
 /*	margin-left: 20px;
@@ -868,8 +868,21 @@ p.ex-poem.right {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-bottom: 20px;
   font-family: "Bastardo-Regular";
+}
+
+.inner-transcript-container {
+    flex-direction: row;
+    justify-self: center;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-family: "Bastardo-Regular";
+    padding-right: 20px;
 }
 
 .experience-content.bottom {
@@ -1161,7 +1174,7 @@ override default look) */
 }*/
 }
 
-p.highlight {
+span.highlight {
 /*	background-color: #778E6D;*/
 	color: black;
 }
